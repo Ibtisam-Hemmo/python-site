@@ -1,0 +1,40 @@
+body::before{
+    display:block;
+    content:'';
+    height:60px;
+}
+
+.bg-news{
+    background-color: #FFC107;
+}
+
+.bg-python{
+    background-color: #ABE5B2;
+    color:#3B6079;
+}
+
+.btn-read{
+    background-color:#FED142;
+}
+.btn-sign{
+    background-color:#3B6079;
+    color: #fff;
+}
+.bg-dar{
+    background-color:#1B205A;
+}
+
+.bg-darkk{
+    background-color:#1a4259;
+}
+
+#map{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+@media(min-width: 768px){
+    .news-input{
+        width:50%;
+    }
+}
