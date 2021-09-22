@@ -15,6 +15,11 @@ body::before{
 
 .btn-read{
     background-color:#FED142;
+    
+}
+
+.btn:hover{
+    letter-spacing: 1px;
 }
 .btn-sign{
     background-color:#3B6079;
@@ -33,8 +38,21 @@ body::before{
     height:100%;
     border-radius:10px;
 }
+
 @media(min-width: 768px){
     .news-input{
         width:50%;
     }
 }
+.moreText{
+    display:none;
+}
+
+.text.show-more .moreText {
+display: inline;
+}
+
+.text.show-more .dots {
+display: none;
+}
+

@@ -50,7 +50,7 @@
                     <p class="lead my-4">We focus on teaching our students the fundamentals of the latest and greatest 
                         technologies to prepare them for their first dev role
                     </p>
-                    <button class="btn btn-lg btn-read" data-bs-toggle="modal" data-bs-target="#enroll"> 
+                    <button class="btn btn-lg btn-read " data-bs-toggle="modal" data-bs-target="#enroll"> 
                         Enroll the course 
                     </button>
                     
@@ -141,11 +141,16 @@
                     <p class="lead">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, delectus.
                     </p>
-                    <p class="lead">
+                    <p class="lead text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptates modi ipsa, doloribus perferendis tenetur mollitia nam tempore et reiciendis asperiores inventore. Ab laborum nihil quos cupiditate magni obcaecati et!
+                        <span class="dots"> ...</span> <br> <br> <span class="moreText">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem praesentium in ipsam, adipisci fugit suscipit?
+                        </span>
                     </p>
-                    <button class="btn btn-sign  mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More </button>
+                    
+                    <button class="btn btn-sign mt-3 read-more-btn">
+                        <i class="bi bi-chevron-right "></i> Read More 
+                    </button>
                 </div>
             </div>
         </div>
@@ -368,7 +373,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+              <h5 class="modal-title" id="enrollLabel">Enroll form</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -396,7 +401,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary"> Submit </button>
+              <button type="button" class="btn btn-read"> Submit </button>
             </div>
           </div>
         </div>
@@ -412,6 +417,19 @@
         center: [-71.060892,42.35725],
         zoom:18
         });
+
+        const readMoreBtn = document.querySelector(".read-more-btn");
+        const text = document.querySelector(".text");
+
+        readMoreBtn.addEventListener("click", (e) => {
+        text.classList.toggle("show-more");
+        if (readMoreBtn.innerText === "Read Less") {
+            readMoreBtn.innerText = "Read More ";
+        } else {
+            readMoreBtn.innerText = " Read Less";
+        }
+        });
+
     </script>
 </body>
 </html>
